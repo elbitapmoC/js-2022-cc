@@ -7,26 +7,19 @@
     <title>JS Foundation | Intro</title>
 </head>
 <body>
-    <h1>What Can JS Do?</h1>
+    <h1>Which ways can I display JS?</h1>
 
-    <section>
-        <p>It can change the HTML attributes values.</p>
-        <button onclick="document.getElementById('myLightbulb').src='./images/light-on.png'">Turn ON Light</button>
-        <img id="myLightbulb" src="./images/light-off.png" alt="Lightbulb" style="width:100px">
-        <button onclick="document.getElementById('myLightbulb').src='./images/light-off.png'">Turn OFF Light</button>
-    </section>
+    <ul>
+        <!-- Common way -->
+        <li>innerHTML</li>
 
-    <section>
-        <p id="pushinP">You can change styling of your elements.</p>
-        <button onclick="document.getElementById('pushinP').style.color='green'">Change font color</button>
-        <button onclick="document.getElementById('pushinP').style.color='black'">Change back to default</button>
-    </section>
-
-    <section>
-        <p id="newlyAddedP">You can hide elements.</p>
-        <button onclick="document.getElementById('newlyAddedP').style.display='none'">Remove p</button>
-        <button onclick="document.getElementById('newlyAddedP').style.display='block'">Add p</button>
-    </section>
-    <script src="./index.js"></script>
+        <!-- This deletes ALL existing HTML. -->
+        <li>document.write()</li>
+        <li>alert()</li>
+        <!-- Great for debugging -->
+        <li>console.log()</li>
+    </ul>
+    <script src="./index.js">
+    </script>
 </body>
 </html>
