@@ -7,7 +7,26 @@
     <title>JS Foundation | Intro</title>
 </head>
 <body>
-    <section id="demo"></section>
+    <h1>What Can JS Do?</h1>
+
+    <section>
+        <p>It can change the HTML attributes values.</p>
+        <button onclick="document.getElementById('myLightbulb').src='./images/light-on.png'">Turn ON Light</button>
+        <img id="myLightbulb" src="./images/light-off.png" alt="Lightbulb" style="width:100px">
+        <button onclick="document.getElementById('myLightbulb').src='./images/light-off.png'">Turn OFF Light</button>
+    </section>
+
+    <section>
+        <p id="pushinP">You can change styling of your elements.</p>
+        <button onclick="document.getElementById('pushinP').style.color='green'">Change font color</button>
+        <button onclick="document.getElementById('pushinP').style.color='black'">Change back to default</button>
+    </section>
+
+    <section>
+        <p id="newlyAddedP">You can hide elements.</p>
+        <button onclick="document.getElementById('newlyAddedP').style.display='none'">Remove p</button>
+        <button onclick="document.getElementById('newlyAddedP').style.display='block'">Add p</button>
+    </section>
     <script src="./index.js"></script>
 </body>
 </html>
