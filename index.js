@@ -32,7 +32,9 @@ a = randomWord.trim(); // removes white spaces from the sides.
 a = z.charAt(2) // w
 
 // String -> Array ----------------------------
-a = z.split(' '); //
+a = z.split(' '); //Returns an array of words
+a = z.split(''); //Returns an array of single characters
+
 
 // console.log(a);
 console.table(a);
