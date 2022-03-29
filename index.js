@@ -7,4 +7,9 @@ const person = {
   }
 }
 
-console.log(person.fullName());
+const time = {
+  printTime : function(){
+    
+    return document.getElementById('demo').innerHTML = Date();
+  }
+}
