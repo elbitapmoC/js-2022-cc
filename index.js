@@ -1,4 +1,10 @@
-function myFunction(var1, var2){
-  return var1 * var2;
-  // returns the result of the two variables added together.
-}s
+const person = {
+  fN: 'Ahkal',
+  heritageName: 'Yahawadah',
+  parent: true,
+  fullName : function() {
+    return `${this.fN} ban ${this.heritageName}` //'this' refers to the person object.
+  }
+}
+
+console.log(person.fullName());
