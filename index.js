@@ -1,40 +1,43 @@
-// NEVER CREATE STRINGS AS OBJECTS ----------------------------
-let x = new String('John');
-let y = new String('Johnny Appleseed');
-let z = "How much wood would a woodchuck chuck if a woodchuck could chuck wood?";
-let randomWord = '                where MOMMY go?                  ';
+//SEARCH Methods ----------------------------
+// indexOf - can not take regex values
+// lastIndexOf
+// startsWith
+// endsWith
+// search - cannot take a second argument (for start position)
 
-// Returns false, comparing objects ALWAYS returns false.
-// console.log(x.length); //4
+let str = "I'm of looking for the owner of this one of a kind glass slipper. Of, Have you seen her?"
+let a = str.indexOf('glass'); // 51
+a = str.slice(51);
 
-// Extracting String Parts ----------------------------
-// slice (start, end)
-// substring (start, end)
+let newStr = str.replace(/of/gi, 'offer');
+a = newStr.lastIndexOf('offer'); // searches backward
+a = newStr.slice(75)
 
-let a = x.slice(0,2); // Jo
-a = x.substring(1,3); // oh
-a = y.substring(12); // Seed
-a = x.slice(1); //ohn, by excluding the 2nd parameter this method will slice out the rest of the string.
-a = y.slice(-4); //print out (4) of characters from the end
-a = y.slice(7,6); // empty string
-a = y.substring(8,6); // A
+a = str.indexOf('of', 30) // second param is the start position. //41
 
-a = y.replace('Johnny', 'Opal') // replace returns a NEW string & returns ONLY the 1st match.
-a = z.replace(/wood/g, 'lumber'); //global match, replaces all matches
+// MATCH---
+// match - searches a string and returns the matches in an aray.
+a = str.match(/of/ig) // [ "of", "of", "of", "Of" ]
 
-// String Methods ----------------------------
-// String Methods - They don't modify the OG string.
-a = randomWord.toUpperCase();
-a = randomWord.toLowerCase();
-a = randomWord.trim(); // removes white spaces from the sides.
+// INCLUDES---
+// includes - checks if a string contains a specific value
+a = str.includes('owner'); // true
 
-// Extracting string characters
-a = z.charAt(2) // w
+// STARTS WITH---
+// startsWith - checks if a string starts w/ a specific value
+a = str.startsWith('I'); // true
+a = str.startsWith('i'); // false
 
-// String -> Array ----------------------------
-a = z.split(' '); //Returns an array of words
-a = z.split(''); //Returns an array of single characters
+// ENDS WITH---
+// endsWith - checks if a string starts w/ a specific value
+a = str.endsWith('?'); // true
+a = str.endsWith('.'); // false
 
+function reverseString(str) {
+  let a = str.split('').reverse();
+  let b = a.join('');
+  console.log(b);
+}
 
+reverseString(str);
 // console.log(a);
-console.table(a);
