@@ -22,7 +22,8 @@ carName = "Volvo";
 let carName;
 // Can't access 'carName' before initialization. 
 // Line 22, it's declared but not initialized.
-// The block is aware of carName but can not be used intil it's defined.
+// |
+// Using a let before it's declared will give us an Error(ReferenceError)
 
 // JS Hoists declarations NOT initializations
 // Declare example
@@ -30,6 +31,6 @@ var x;
 x = 5;
 
 // Initialize example
-var y = 5;
+var y = 5; // NOT hoisted.
 
 // We can avoid hoisting issues by declaring variables at the top of the page and/or of the function.
