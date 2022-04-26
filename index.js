@@ -1,36 +1,31 @@
-x = 5 // Assign 5 to x
+// Be careful with floating point numebers..
+let x = 0.1 + 0.2;
+let y = .3;
+if (x == y ){
+  console.log("Works");
+} else console.log("Floating point arithmetic is not always 100% accurate.");
 
-elem = document.getElementById("demo");
-elem.innerHTML = x;
+// When adding numbers, use +
+let z = x+y;
+// Using  + with numbers and strings, + will treat the number like a string.
+let a = '0.1'+0.2;
+console.log(a); // 0.10.2
 
-var x; // declare x
+console.log(isNaN(a)); //returns T or F
 
-/* 
-  WEIRD right?
-  We used the varible BEFORE defining it...
-  
-  This is hoisting.
-  JS's default behavior to move all declarations to the top of the current scope.
-*/
+let aa = 777;
+let ab;
 
-var x; // declare x
-x = 5 // Assign 5 to x
-// Above is an example of what JS will do by default, it moves the declaration above the initialization.
+// toString() - convert to string
+ab= aa.toString(); // "777"
 
+console.log(ab);
 
-carName = "Volvo";
-let carName;
-// Can't access 'carName' before initialization. 
-// Line 22, it's declared but not initialized.
-// |
-// Using a let before it's declared will give us an Error(ReferenceError)
-
-// JS Hoists declarations NOT initializations
-// Declare example
-var x;
-x = 5;
-
-// Initialize example
-var y = 5; // NOT hoisted.
-
-// We can avoid hoisting issues by declaring variables at the top of the page and/or of the function.
+console.log(`
+Number(true): ${Number(true)}
+Number(false): ${Number(false)}
+Number("10"): ${Number("10")}
+Number("Jojo"): ${Number("Jojo")}
+${parseInt("10.33")} 
+`);
+console.log(ab);
