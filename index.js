@@ -1,31 +1,43 @@
-// Be careful with floating point numebers..
-let x = 0.1 + 0.2;
-let y = .3;
-if (x == y ){
-  console.log("Works");
-} else console.log("Floating point arithmetic is not always 100% accurate.");
+// It's common practice to declare arrays w/ const keyword.
+// Arrays can be initialized w/ info
+const cars = [
+  'Acura: Honda Motor Company',
+  'Alfa Romeo: Stellantis',
+  'Audi: Volkswagen Group',
+  'BMW: BMW Group',
+  'Bentley: Volkswagen Group',
+  'Buick: General Motors',
+  'Cadillac: General Motors',
+  'Chevrolet: General Motors'
+];
+// Alt to above
+const typeOfCars = new Array('Pickup Truck', 'Station Wagon', 'Minivan', 'Coupe', 'Sports Cars', 'Sedan', 'Convertible', 'Crossover', 'Hatchback', 'SUV');
 
-// When adding numbers, use +
-let z = x+y;
-// Using  + with numbers and strings, + will treat the number like a string.
-let a = '0.1'+0.2;
-console.log(a); // 0.10.2
+// Access arrays via their index
+// console.log(cars[0]); //Acura
 
-console.log(isNaN(a)); //returns T or F
+cars[0] = 'Honda';
+let cLength = cars.length;
 
-let aa = 777;
-let ab;
+// Looping array elements.
+// FOR
+// for(let i = 0; i<cLength;i++){
+//   console.log(cars[i])
+// }
 
-// toString() - convert to string
-ab= aa.toString(); // "777"
+// FOREACH  
+cars.forEach(car => {
+  console.log(car)
+});
 
-console.log(ab);
+const fruits = ['Baby Bananas', 'Oranges', 'Peaches', 'Kiwi'];
+fruits.push('Mango'); // Adds to the end
+fruits.shift(); // Removes the first index of array
+fruits.unshift('Baby Nanas'); // Removes the first index of array
+fruits.splice(2,0, 'Lemon', 'Watermelon (Seeded)'), 
+//2, Position to add new element.
+//0, How many elements to remove.
+//After 0, elements to be added to array.
+fruits.splice(2,0), 
 
-console.log(`
-Number(true): ${Number(true)}
-Number(false): ${Number(false)}
-Number("10"): ${Number("10")}
-Number("Jojo"): ${Number("Jojo")}
-${parseInt("10.33")} 
-`);
-console.log(ab);
+console.log(fruits)
