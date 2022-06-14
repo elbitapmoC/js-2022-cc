@@ -34,7 +34,7 @@ const fruits = ['Baby Bananas', 'Oranges', 'Peaches', 'Kiwi'];
 fruits.push('Mango'); // Adds to the end
 fruits.shift(); // Removes the first index of array
 fruits.unshift('Baby Nanas'); // Removes the first index of array
-fruits.splice(2,0, 'Lemon', 'Watermelon (Seeded)'), 
+fruits.splice(2,0, 'Lemon', 'Watermelon (Seeded)'),
 //2, Position to add new element.
 //0, How many elements to remove.
 //After 0, elements to be added to array.
