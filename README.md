@@ -16,7 +16,7 @@
 - Microposts
 - Frontend CRUD for REST API (Webpack & Babel)
 
-#### What We'll Be Learning:
+#### What We'll Cover:
 
 - Modular learning sections & 10 real world projects with pure JavaScript
 - Master the DOM (document object model) WITHOUT jQuery
