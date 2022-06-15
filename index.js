@@ -19,6 +19,7 @@ x = 5 // Assign 5 to x
 
 
 carName = "Volvo";
+// let doesn't exist UNTIL line 23. Above is unaccessible for now.
 let carName;
 // Can't access 'carName' before initialization. 
 // Line 22, it's declared but not initialized.
