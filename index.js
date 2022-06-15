@@ -26,18 +26,25 @@ let cLength = cars.length;
 // }
 
 // FOREACH  
-cars.forEach(car => {
-  console.log(car)
-});
+// cars.forEach(car => {
+//   console.log(car)
+// });
 
 const fruits = ['Baby Bananas', 'Oranges', 'Peaches', 'Kiwi'];
 fruits.push('Mango'); // Adds to the end
 fruits.shift(); // Removes the first index of array
 fruits.unshift('Baby Nanas'); // Removes the first index of array
-fruits.splice(2,0, 'Lemon', 'Watermelon (Seeded)'),
+fruits.splice(2,0, 'Lemon', 'Watermelon (Seeded)');
 //2, Position to add new element.
 //0, How many elements to remove.
 //After 0, elements to be added to array.
-fruits.splice(2,0), 
+fruits.splice(2,0);
 
-console.log(fruits)
+// console.log(fruits)
+
+const arrFill = new Array(5); // creates 5 empty slots.
+console.log(arrFill);
+
+// Check to see if an array includes a certain value.
+const arrIncludes = new Array(1,2,3,4);
+console.log(arrIncludes.includes(3));
